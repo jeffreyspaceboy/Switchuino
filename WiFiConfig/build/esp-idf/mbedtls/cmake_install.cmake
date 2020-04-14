@@ -1,4 +1,4 @@
-# Install script for directory: /home/jfisher/projects/esp/esp-idf/components/mbedtls
+# Install script for directory: /Users/jeffreyfisher/esp/esp-idf/components/mbedtls
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/jfisher/eclipse-workspace/WiFiConfig/build/esp-idf/mbedtls/mbedtls/cmake_install.cmake")
+  include("/Users/jeffreyfisher/Documents/Projects/Switchuino/Switchuino/WiFiConfig/build/esp-idf/mbedtls/mbedtls/cmake_install.cmake")
 
 endif()
 

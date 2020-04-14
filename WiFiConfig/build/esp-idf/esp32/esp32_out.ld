@@ -30,13 +30,11 @@ MEMORY
   iram0_0_seg (RX) : org = 0x40080000, len = 0x20000
   /* Even though the segment name is iram, it is actually mapped to flash
   */
-  iram0_2_seg (RX) : org = 0x400D0020, len = 0x330000-0x20
+  iram0_2_seg (RX) : org = 0x400D0018, len = 0x330000-0x18
   /*
-    (0x20 offset above is a convenience for the app binary image generation.
-    Flash cache has 64KB pages. The .bin file which is flashed to the chip
-    has a 0x18 byte file header, and each segment has a 0x08 byte segment
-    header. Setting this offset makes it simple to meet the flash cache MMU's
-    constraint that (paddr % 64KB == vaddr % 64KB).)
+    (0x18 offset above is a convenience for the app binary image generation. Flash cache has 64KB pages. The .bin file
+    which is flashed to the chip has a 0x18 byte file header. Setting this offset makes it simple to meet the flash
+    cache MMU's constraint that (paddr % 64KB == vaddr % 64KB).)
   */
   /* Shared data RAM, excluding memory reserved for ROM bss/data/stack.
 
@@ -50,13 +48,13 @@ MEMORY
   dram0_0_seg (RW) : org = 0x3FFB0000 + 0xdb5c,
                                      len = 0x2c200 - 0xdb5c
   /* Flash mapped constant data */
-  drom0_0_seg (R) : org = 0x3F400020, len = 0x400000-0x20
-  /* (See iram0_2_seg for meaning of 0x20 offset in the above.) */
+  drom0_0_seg (R) : org = 0x3F400018, len = 0x400000-0x18
+  /* (See iram0_2_seg for meaning of 0x18 offset in the above.) */
   /* RTC fast memory (executable). Persists over deep sleep.
    */
   rtc_iram_seg(RWX) : org = 0x400C0000, len = 0x2000
   /* RTC fast memory (same block as above), viewed from data bus */
-  rtc_data_seg(RW) : org = 0x3ff80000, len = 0x2000 - 0
+  rtc_data_seg(RW) : org = 0x3ff80000, len = 0x2000
   /* RTC slow memory (data accessible). Persists over deep sleep.
 
      Start of RTC slow memory is reserved for ULP co-processor code + data, if enabled.
@@ -75,5 +73,3 @@ _data_seg_org = ORIGIN(rtc_data_seg);
    When the option is not defined then use slow memory segment
    else the data will be placed in fast memory segment */
 REGION_ALIAS("rtc_data_location", rtc_slow_seg );
-  REGION_ALIAS("default_code_seg", iram0_2_seg);
-  REGION_ALIAS("default_rodata_seg", drom0_0_seg);

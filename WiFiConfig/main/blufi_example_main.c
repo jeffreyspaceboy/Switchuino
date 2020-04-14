@@ -42,7 +42,7 @@
 
 static void example_event_callback(esp_blufi_cb_event_t event, esp_blufi_cb_param_t *param);
 
-#define BLUFI_DEVICE_NAME            "BLUFI_DEVICE"
+#define BLUFI_DEVICE_NAME            "SWITCHUINO"
 static uint8_t example_service_uuid128[32] = {
     /* LSB <--------------------------------------------------------------------------------> MSB */
     //first uuid, 16bit, [12],[13] is the value

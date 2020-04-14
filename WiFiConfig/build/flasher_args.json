@@ -17,8 +17,6 @@
     "app" : { "offset" : "0x10000", "file" : "blufi_demo.bin" },
     "extra_esptool_args" : {
         "after"  : "hard_reset",
-        "before" : "default_reset",
-        "stub"   : "TRUE",
-        "chip"   : "esp32"
+        "before" : "default_reset"
     }
 }

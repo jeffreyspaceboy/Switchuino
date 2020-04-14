@@ -1,4 +1,4 @@
-# Install script for directory: /home/jfisher/eclipse-workspace/WiFiConfig/main
+# Install script for directory: /Users/jeffreyfisher/Documents/Projects/Switchuino/Switchuino/WiFiConfig/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

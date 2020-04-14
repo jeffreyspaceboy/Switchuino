@@ -1,20 +1,18 @@
 {
     "project_name":       "bootloader",
-    "project_path":       "/home/jfisher/projects/esp/esp-idf/components/bootloader/subproject",
-    "build_dir":          "/home/jfisher/eclipse-workspace/WiFiConfig/build/bootloader",
-    "config_file":        "/home/jfisher/eclipse-workspace/WiFiConfig/sdkconfig",
+    "project_path":       "/Users/jeffreyfisher/esp/esp-idf/components/bootloader/subproject",
+    "build_dir":          "/Users/jeffreyfisher/Documents/Projects/Switchuino/Switchuino/WiFiConfig/build/bootloader",
+    "config_file":        "/Users/jeffreyfisher/Documents/Projects/Switchuino/Switchuino/WiFiConfig/sdkconfig",
     "config_defaults":    "",
     "app_elf":            "bootloader.elf",
     "app_bin":            "bootloader.bin",
-    "git_revision":       "v4.2-dev-1097-g2e14149bf-dirty",
-    "target":             "esp32",
+    "git_revision":       "v4.0-dirty",
     "phy_data_partition": "",
-    "monitor_baud" :      "115200",
-    "monitor_toolprefix": "xtensa-esp32-elf-",
+    "monitor_baud" : "115200",
     "config_environment" : {
-        "COMPONENT_KCONFIGS" : "/home/jfisher/projects/esp/esp-idf/components/efuse/Kconfig;/home/jfisher/projects/esp/esp-idf/components/esp32/Kconfig;/home/jfisher/projects/esp/esp-idf/components/esp_common/Kconfig;/home/jfisher/projects/esp/esp-idf/components/log/Kconfig;/home/jfisher/projects/esp/esp-idf/components/spi_flash/Kconfig",
-        "COMPONENT_KCONFIGS_PROJBUILD" : "/home/jfisher/projects/esp/esp-idf/components/bootloader/Kconfig.projbuild;/home/jfisher/projects/esp/esp-idf/components/esptool_py/Kconfig.projbuild;/home/jfisher/projects/esp/esp-idf/components/partition_table/Kconfig.projbuild"
+        "COMPONENT_KCONFIGS" : "/Users/jeffreyfisher/esp/esp-idf/components/efuse/Kconfig;/Users/jeffreyfisher/esp/esp-idf/components/esp32/Kconfig;/Users/jeffreyfisher/esp/esp-idf/components/esp_common/Kconfig;/Users/jeffreyfisher/esp/esp-idf/components/log/Kconfig;/Users/jeffreyfisher/esp/esp-idf/components/spi_flash/Kconfig",
+        "COMPONENT_KCONFIGS_PROJBUILD" : "/Users/jeffreyfisher/esp/esp-idf/components/bootloader/Kconfig.projbuild;/Users/jeffreyfisher/esp/esp-idf/components/esptool_py/Kconfig.projbuild;/Users/jeffreyfisher/esp/esp-idf/components/partition_table/Kconfig.projbuild"
     },
     "build_components" : [ "bootloader", "bootloader_support", "efuse", "esp32", "esp_common", "esp_rom", "esptool_py", "log", "main", "micro-ecc", "partition_table", "soc", "spi_flash", "xtensa", "" ],
-    "build_component_paths" : [ "/home/jfisher/projects/esp/esp-idf/components/bootloader", "/home/jfisher/projects/esp/esp-idf/components/bootloader_support", "/home/jfisher/projects/esp/esp-idf/components/efuse", "/home/jfisher/projects/esp/esp-idf/components/esp32", "/home/jfisher/projects/esp/esp-idf/components/esp_common", "/home/jfisher/projects/esp/esp-idf/components/esp_rom", "/home/jfisher/projects/esp/esp-idf/components/esptool_py", "/home/jfisher/projects/esp/esp-idf/components/log", "/home/jfisher/projects/esp/esp-idf/components/bootloader/subproject/main", "/home/jfisher/projects/esp/esp-idf/components/bootloader/subproject/components/micro-ecc", "/home/jfisher/projects/esp/esp-idf/components/partition_table", "/home/jfisher/projects/esp/esp-idf/components/soc", "/home/jfisher/projects/esp/esp-idf/components/spi_flash", "/home/jfisher/projects/esp/esp-idf/components/xtensa", "" ]
+    "build_component_paths" : [ "/Users/jeffreyfisher/esp/esp-idf/components/bootloader", "/Users/jeffreyfisher/esp/esp-idf/components/bootloader_support", "/Users/jeffreyfisher/esp/esp-idf/components/efuse", "/Users/jeffreyfisher/esp/esp-idf/components/esp32", "/Users/jeffreyfisher/esp/esp-idf/components/esp_common", "/Users/jeffreyfisher/esp/esp-idf/components/esp_rom", "/Users/jeffreyfisher/esp/esp-idf/components/esptool_py", "/Users/jeffreyfisher/esp/esp-idf/components/log", "/Users/jeffreyfisher/esp/esp-idf/components/bootloader/subproject/main", "/Users/jeffreyfisher/esp/esp-idf/components/bootloader/subproject/components/micro-ecc", "/Users/jeffreyfisher/esp/esp-idf/components/partition_table", "/Users/jeffreyfisher/esp/esp-idf/components/soc", "/Users/jeffreyfisher/esp/esp-idf/components/spi_flash", "/Users/jeffreyfisher/esp/esp-idf/components/xtensa", "" ]
 }
